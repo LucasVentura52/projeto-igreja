@@ -40,6 +40,7 @@ Este é um projeto simples feito com **HTML, CSS e Bootstrap** que apresenta de 
 ├── style.css
 └── img/
     └── perfil.jpeg
+    └── preview.png
 ```
 
 ## ✨ Créditos
