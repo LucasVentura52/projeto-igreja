@@ -19,7 +19,7 @@ Este é um projeto simples feito com **HTML, CSS e Bootstrap** que apresenta de 
 
 ## 📷 Preview
 
-![preview](./img/perfil.jpeg)
+![preview](./img/preview.png)
 
 > **Endereço:** Travessa Canário, nº 22 – Cianorte/PR  
 > **Frase:** *"Alegrei-me quando me disseram: Vamos à casa do Senhor."* – Salmos 122:1
