@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informações dos Cultos</title>
+  <link rel="icon" type="image/jpeg" href="/img/perfil.jpeg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Perfil e informações da igreja -->
+  <header class="profile-section">
+    <img src="./img/perfil.jpeg" alt="Foto do templo ou perfil da igreja" class="profile-img" />
+    <h1 class="username">Assembleia de Deus Missão - Gralha Azul</h1>
+    <p class="subtitle">Travessa Canário, n° 22</p>
+    <p class="handle">Cianorte - PR</p>
+  </header>
+
+  <!-- Lista de cultos -->
+  <main class="links-container">
+    <section class="accordion" id="accordionExample">
+      <!-- Sábados -->
+      <article class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed card-custom" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <div class="card-body-custom">
+              <i class="fas fa-children me-2 text-white" aria-hidden="true"></i>
+              <span class="card-text text-white">Aos sábados temos:</span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Programação dos sábados:</strong></p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-child me-2 text-secondary" aria-hidden="true"></i><strong>1º sábado:</strong> Culto das Crianças</li>
+              <li><i class="fas fa-wine-glass me-2 text-secondary" aria-hidden="true"></i><strong>2º sábado:</strong> Santa Ceia</li>
+              <li><i class="fas fa-people-group me-2 text-secondary" aria-hidden="true"></i><strong>3º sábado:</strong> Culto Jovem</li>
+              <li><i class="fas fa-hand-holding-heart me-2 text-secondary" aria-hidden="true"></i><strong>4º sábado:</strong> Círculo de Oração</li>
+            </ul>
+            <p><strong>Horário de todos os cultos:</strong></p>
+            <p>🕖 Das <strong>19:00</strong> às <strong>21:00</strong></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Domingos -->
+      <article class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed card-custom" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="card-body-custom">
+              <i class="fas fa-hands-praying me-2 text-white" aria-hidden="true"></i>
+              <span class="card-text">Aos domingos temos:</span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Programação dos domingos:</strong></p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-book-open me-2 text-secondary" aria-hidden="true"></i><strong>Manhã:</strong> Escola Bíblica Dominical (EBD)</li>
+              <li><i class="fas fa-hands-praying me-2 text-secondary" aria-hidden="true"></i><strong>Noite:</strong> Culto da Família</li>
+            </ul>
+            <p><strong>Horários:</strong></p>
+            <ul class="list-unstyled">
+              <li>📖 <strong>EBD:</strong> 09:00 – 10:20</li>
+              <li>🕖 <strong>Culto da Família:</strong> 19:00 – 21:00</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cultos da semana -->
+      <article class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed card-custom" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="card-body-custom">
+              <i class="fas fa-book-bible me-2 text-white" aria-hidden="true"></i>
+              <span class="card-text">Cultos da semana:</span>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Programação durante a semana:</strong></p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-praying-hands me-2 text-secondary" aria-hidden="true"></i><strong>Segunda:</strong> Culto de Oração</li>
+              <li><i class="fas fa-chalkboard-teacher me-2 text-secondary" aria-hidden="true"></i><strong>Quarta:</strong> Culto de Ensino</li>
+              <li><i class="fas fa-hand-holding-heart me-2 text-secondary" aria-hidden="true"></i><strong>Quinta:</strong> Culto do Círculo de Oração</li>
+            </ul>
+            <p><strong>Horários:</strong></p>
+            <ul class="list-unstyled">
+              <li>🙏 <strong>Segunda:</strong> 20:00 – 20:30</li>
+              <li>📘 <strong>Quarta:</strong> 20:00 – 21:00</li>
+              <li>🕊️ <strong>Quinta:</strong> 20:00 – 21:00</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Versículo final -->
+    <footer class="profile-section">
+      <strong>"Alegrei-me quando me disseram: Vamos à casa do Senhor."</strong>
+      <div><strong>Salmos 122:1</strong></div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
