@@ -1,0 +1,176 @@
+/* === GERAL === */
+body {
+  background: linear-gradient(135deg, #faf7f2, #f3f0ea);
+  background-color: #F9F7F4;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === PERFIL === */
+.profile-section {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.profile-section:last-child {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #7F2929;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #bbbbbb;
+}
+
+.username {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle,
+.handle {
+  font-size: 0.95rem;
+  color: #888888;
+  margin-bottom: 0.3rem;
+}
+
+/* === CONTEINER DE LINKS === */
+.links-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* === ACCORDION === */
+.accordion-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header .card-custom,
+.accordion-collapse .accordion-body {
+  border: none;
+  background-color: #7F2929;
+}
+
+.accordion-button {
+  padding: 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg);
+}
+
+.card-custom.accordion-button::after {
+  filter: brightness(0) invert(1);
+  margin-right: 10px;
+}
+
+.card-custom {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  transition: transform 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-custom:hover {
+  transform: translateY(-1px);
+}
+
+.card-body-custom {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #8e2b2b, #7F2929);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: background-color 0.3s ease;
+  will-change: transform, opacity;
+}
+
+.card-text {
+  margin: 0;
+  flex-grow: 1;
+  margin-left: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) .card-text {
+  color: #fff;
+}
+
+.accordion-collapse {
+  transition: height 0.25s ease;
+  overflow: hidden;
+}
+
+.accordion-collapse .accordion-body {
+  background-color: #fafafa;
+  padding: 1.2rem;
+  font-size: 0.95rem;
+  color: #555;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  line-height: 1.6;
+}
+
+.accordion-body {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.20s ease, transform 0.25s ease;
+}
+
+.accordion-collapse.show .accordion-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === ANIMAÇÕES === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 767.98px) {
+  .profile-section {
+    padding-top: 1rem;
+  }
+}
