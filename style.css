@@ -16,7 +16,7 @@ body {
 .profile-section:last-child {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 2px dashed #7F2929;
+  border-top: 2px dashed #740013;
   font-size: 0.95rem;
   color: #333;
 }
@@ -64,7 +64,7 @@ body {
 .accordion-header .card-custom,
 .accordion-collapse .accordion-body {
   border: none;
-  background-color: #7F2929;
+  background-color: #740013;
 }
 
 .accordion-button {
@@ -109,7 +109,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1.2rem;
-  background: linear-gradient(135deg, #8e2b2b, #7F2929);
+  background: linear-gradient(135deg, #740013, #740013);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transition: background-color 0.3s ease;
